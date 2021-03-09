@@ -1,0 +1,576 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styels.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="control.js"></script>
+        <title>Document Maker Demo</title>    
+        <link rel = "icon" href =  
+        "./Images/pix3.png" 
+                type = "image/y-icon"> 
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="./Images/pix2.jpg" width="50px" height="50px"> PersonalDoc</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Cover-page</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Index</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CV</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Bio-Data</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </nav>
+        </div>
+
+
+        <section id="bg-img">
+          <div id="bg-img1">
+            <div class="bg-tex1">
+              <h1 style="font-size:50px">PersonalDoc</h1>
+              <p>Make Your Profational Documents Here</p>
+              </div>
+          </div>
+          
+        </section>
+
+        <div id="ss1">
+            <div class="container" id="con1">
+                <div class="row">
+                    <div class="col-sm-6  mx-auto p-5" id="Cos">
+                        <div class="text-center">
+                            <button class="btn btn-success" id="bt1" data-target="#con2" data-toggle="collapse" onclick = "J()">Let's Create <i class="far fa-arrow-right"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse " id="con2">
+          <div class="container">
+            <h2 class="text-center mb-2">
+              Your Details
+            </h2>
+            <div class="line-dec mb-5"></div>
+            <div class="row">
+              <div class="col-md-6 mx-auto p-5">
+             <div class="card bg-primary text-center text-white p-5">
+               <div class="card-body">
+                 <h3 class="mb-5">Enter Your Details</h3>
+                 <h4 class="mb-3">Please Fill Up The Form To Make Cover-page</h4>
+                <form>
+                  <div class="form-group">
+                    <input class="form form-control form-control-sm" placeholder="Student's Name"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form form-control form-control-sm" placeholder="Student's ID"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form form-control form-control-sm" placeholder="Year/Semester"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form form-control form-control-sm" placeholder="Course Name"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form form-control  form-control-sm" placeholder="Course Code"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form form-control form-control-sm" placeholder="Teacher's Name"/>
+                  </div>
+                  <div class="form-group">
+                    <input class="form form-control form-control-sm" placeholder="Submission Date"/>
+                  </div>
+                </form>
+                <button  class="btn btn-warning mt-5 float-right" data-target="#modals" data-toggle="collapse" id="Next2">Next</button>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="collapse" id="modals">
+
+          <div class="container">
+            <h2 class="text-center  mb-5">Choose Your Favourite Templet</h2>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 mb-5">
+                <div class="card h-100">
+                  <img class="card-img-top" id="img_1" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427__480.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Templet 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, commodi assumenda doloribus sapiente cumque enim.</p>
+                    <button class="btn btn-success" data-target="#modal_1" data-toggle="modal">Demo</button>
+                    <div class="modal fade" id="modal_1" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Templet 1</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                  <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/10/30/05/43/school-1782427__480.jpg">
+                                </div>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                              <button class="btn btn-success" id="demo1" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show1()">Choose</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                  </div>
+            </div>
+          </div>
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_2" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/11/29/09/41/bag-1868758_1280.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 2</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quia! Ad explicabo id rem mollitia.</p>
+                      <button class="btn btn-success" data-target="#modal_2" data-toggle="modal">Demo</button>
+                      <div class="modal fade" id="modal_2" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 2</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/11/29/09/41/bag-1868758_1280.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo2" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show2()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_3" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_1280.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Templet 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#modal_3">Demo</button>
+                    <div class="modal fade" id="modal_3" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Templet 3</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                  <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_1280.jpg">
+                                </div>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                              <button class="btn btn-success" id="demo3" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show3()">Choose</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_4" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2018/06/27/07/45/student-3500990__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 4</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-target="#modal_4" data-toggle="modal">Demo</button>
+                      <div class="modal fade" id="modal_4" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 4</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2018/06/27/07/45/student-3500990__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo4" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show4()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_5" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849820_1280.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 5</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-toggle="modal" data-target="#modal_5">Demo</button>
+                      <div class="modal fade" id="modal_5" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 5</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" id="img_2" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849820_1280.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo5" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show5()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_6" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2019/04/29/07/04/software-development-4165307__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 6</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-target="#modal_6" data-toggle="modal">Demo</button>
+                      <div class="modal fade" id="modal_6" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 6</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2019/04/29/07/04/software-development-4165307__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo6" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show6()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_7" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 7</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-toggle="modal" data-target="#modal_7">Demo</button>
+                      <div class="modal fade" id="modal_7" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 7</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo7" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show7()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_8" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2015/05/31/15/14/woman-792162__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 8</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-target="#modal_8" data-toggle="modal">Demo</button>
+                      <div class="modal fade" id="modal_8" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 8</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2015/05/31/15/14/woman-792162__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo8" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show8()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_9" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/11/08/05/10/students-1807505__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 9</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-toggle="modal" data-target="#modal_9">Demo</button>
+                      <div class="modal fade" id="modal_9" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 9</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/11/08/05/10/students-1807505__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo9" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show9()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_10" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2020/01/22/09/39/teacher-4784916__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 10</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                    <button class="btn btn-success" data-target="#modal_10" data-toggle="modal">Demo</button>
+                    <div class="modal fade" id="modal_10" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Templet 10</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                  <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2020/01/22/09/39/teacher-4784916__480.jpg">
+                                </div>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                              <button class="btn btn-success" id="demo10" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show10()">Choose</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_11" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2020/01/22/09/40/teacher-4784917__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 11</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-toggle="modal" data-target="#modal_11">Demo</button>
+                      <div class="modal fade" id="modal_11" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 11</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2020/01/22/09/40/teacher-4784917__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo11" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show11()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                  <div class="card h-100">
+                    <img class="card-img-top" id="img_12" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144__480.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Templet 12</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
+                      <button class="btn btn-success" data-target="#modal_12" data-target="modal">Demo</button>
+                      <div class="modal fade" id="modal_12" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h5 class="modal-title text-center" id="exampleModalLabel">Templet 12</h5>
+                              </div>
+                              <div class="modal-body">
+                                  <div>
+                                    <img class="card-img-top" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2017/07/20/03/53/homework-2521144__480.jpg">
+                                  </div>
+                              </div>
+                              <div class="modal-footer bg-dark text-white">
+                                <button class="btn btn-success" id="demo12" data-dismiss="modal" data-target="#result" data-toggle="collapse" onclick="Show12()">Choose</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+        </div>
+        </div>
+        </div>
+        
+        <div class="collapse" id="result">
+          <div class="mt-10 mb-5" id="resu">
+            <h2 class="mb-5 text-center">Your Document is Ready. Download Or Print It.</h2>
+            <div class="container p-5" id="con3">
+              
+              <div class="row">
+                <div class="col-sm-6 mb-5">
+                  <img class="w-100" id ="res"/>
+                </div>
+                <div class="col-sm-6 text-center mb-5">
+                  <p id="Lorem"></p>
+                </div>
+               </div>
+            </div>
+            <div id="btns">
+              <Button type="button" class="btn btn-success float-right ml-4 mr-2">Print</Button>
+              <Button type="button" class="btn btn-warning float-right ml-4" id="do">Download</Button>
+              <Button type="button" class="btn btn-danger float-right ml-4" data-target="#modals" data-toggle="collapse" id="go">Go Back</Button>
+            </div>
+                
+            </div>
+            
+            
+          </div>
+        
+
+        <script>
+            $('#bt1').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#Next2').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo1').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo2').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo3').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo4').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo5').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo6').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo7').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo8').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo9').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo10').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo11').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#demo12').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+
+            $('#go').click(function ()
+            {
+                $(".collapse").collapse('hide')
+            });
+        </script>
+    </body>
+</html>
