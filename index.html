@@ -1,15 +1,17 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styels.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="control.js"></script>
-        <title>Document Maker Demo</title>    
-        <link rel = "icon" href =  
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="styels.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="control.js"></script>
+      <title>Document Maker Demo</title>    
+      <link rel = "icon" href =  
         "./Images/pix3.png" 
                 type = "image/y-icon"> 
     </head>
@@ -51,19 +53,20 @@
         <section id="bg-img">
           <div id="bg-img1">
             <div class="bg-tex1">
-              <h1 style="font-size:50px">PersonalDoc</h1>
-              <p>Make Your Profational Documents Here</p>
+              <h1 style="font-size:50px" data-aos="fade-up" data-aos-delay="200">PersonalDoc</h1>
+              <p data-aos="fade-up" data-aos-delay="300">Make Your Profational Documents Here</p>
+              <a class="btn btn-warning" href="#bt1">Learn More</a>
               </div>
           </div>
           
         </section>
 
         <div id="ss1">
-            <div class="container" id="con1">
+            <div class="container" id="con1" data-aos="fade-up" data-aos-delay="200">
                 <div class="row">
-                    <div class="col-sm-4  mx-auto p-5" id="Cos">
+                    <div class="col-sm-4  mx-auto p-5" id="Cos" data-aos="fade-up" data-aos-delay="300">
                         <div class="text-center">
-                            <button class="btn btn-success" id="bt1" data-target="#con2" data-toggle="collapse" onclick = "J()">Let's Create <i class="far fa-arrow-right"></i></button>
+                            <button class="btn btn-success" id="bt1" data-target="#con2" data-toggle="collapse" onclick = "J()" data-aos="fade-up" data-aos-delay="400">Let's Create <i class="far fa-arrow-right"></i></button>
                         </div>
 
                     </div>
@@ -76,12 +79,12 @@
             <h2 class="text-center mb-2">
               Your Details
             </h2>
-            <div class="line-dec mb-5"></div>
+            <div class="line-dec mb-5" ></div>
             <div class="row">
               <div class="col-md-6 mx-auto p-5">
              <div class="card bg-primary text-center text-white p-5">
                <div class="card-body">
-                 <h3 class="mb-5">Enter Your Details</h3>
+                 <h3 class="mb-5" >Enter Your Details</h3>
                  <h4 class="mb-3">Please Fill Up The Form To Make Cover-page</h4>
                 <form>
                   <div class="form-group">
@@ -94,16 +97,16 @@
                     <input class="form form-control form-control-sm" placeholder="Year/Semester"/>
                   </div>
                   <div class="form-group">
-                    <input class="form form-control form-control-sm" placeholder="Course Name"/>
+                    <input class="form form-control form-control-sm" placeholder="Course Name" />
                   </div>
                   <div class="form-group">
                     <input class="form form-control  form-control-sm" placeholder="Course Code"/>
                   </div>
                   <div class="form-group">
-                    <input class="form form-control form-control-sm" placeholder="Teacher's Name"/>
+                    <input class="form form-control form-control-sm" placeholder="Teacher's Name" />
                   </div>
                   <div class="form-group">
-                    <input class="form form-control form-control-sm" placeholder="Submission Date"/>
+                    <input class="form form-control form-control-sm" placeholder="Submission Date" />
                   </div>
                 </form>
                 <button  class="btn btn-warning mt-5 float-right" data-target="#modals" data-toggle="collapse" id="Next2">Next</button>
@@ -117,7 +120,7 @@
         <div class="collapse" id="modals">
 
           <div class="container">
-            <h2 class="text-center  mb-5">Choose Your Favourite Templet</h2>
+            <h2 class="text-center mb-5">Choose Your Favourite Templet</h2>
             <div class="row">
               <div class="col-md-4 col-sm-6 mb-5">
                 <div class="card h-100">
@@ -150,7 +153,7 @@
                 <div class="col-md-4 col-sm-6 mb-5">
                   <div class="card h-100">
                     <img class="card-img-top" id="img_2" class="w-100 h-100 rounded" src="https://cdn.pixabay.com/photo/2016/11/29/09/41/bag-1868758_1280.jpg" alt="Card image cap">
-                    <div class="card-body">
+                      <div class="card-body">
                       <h5 class="card-title">Templet 2</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quia! Ad explicabo id rem mollitia.</p>
                       <button class="btn btn-success" data-target="#modal_2" data-toggle="modal">Demo</button>
@@ -442,7 +445,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Templet 12</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum obcaecati iure natus aliquam atque.</p>
-                      <button class="btn btn-success" data-target="#modal_12" data-target="modal">Demo</button>
+                      <button class="btn btn-success" data-target="#modal_12" data-toggle="modal">Demo</button>
                       <div class="modal fade" id="modal_12" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
@@ -494,27 +497,78 @@
             
             
           </div>
+
+          <section>
+            <footer class="site-footer bg-dark text-white">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 mx-lg-auto col-md-8 col-10 text-center">
+                    <h2>PersonalDocDemo</h2>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="my-4  cnt">Contact Info</h4>
+        
+                    <p class="phn">
+                        <span ><i class="far fa-phone fa-2x mr-2 footer-icon"></i></span> 
+                      +99 080 070 4224
+                    </p>
+        
+                    <p class="email">
+                      <span><i class="far fa-envelope fa-2x mr-2 footer-icon"></i></span>
+                        test@test.com
+                    </p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="my-4 avi">We are Avilable At</h4>
+        
+                    <p class="mb-1">
+                        <ul class="office-list">
+                            <li class="mb-2"><span class="text-primary"><i class="far fa-search-location fa-2x mr-2"></i><a id="a1" href="Office.html">OFFICE</a></span></li>
+                            <li class="mb-2"><span class="text-success"><i class="far fa-location-arrow fa-2x mr-2"></i><a id="a2" href="Chamber1.html">Chamber#1</a></span></li>
+                            <li><span class="text-danger"><i class="far fa-compass fa-2x mr-2"></i><a id="a3" href="Chamber2.html">Chamber#2</a></span></li>
+                        </ul>
+                    </p>
+                  </div>
+        
+                  <div class="col-lg-4 mx-lg-auto text-white col-md-8 col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <p class="copyright-text">Copyright &copy; Charles Kenton 2021</p>
+                    <p class="designer">Designer : <span class="text-info"><i class="fas fa-house-user fa-2x"></i></span>Aziz-Prithibee</p>
+                    <br>
+                  </div>
+                  
+                </div>
+              </div>
+            </footer>
+          </section>
         
 
         <script>
+
+            AOS.init();
+
             $('#bt1').click(function ()
             {
-                $(".collapse").collapse('hide')
+                $(".collapse").collapse('hide');
+                AOS.init();   
             });
 
             $('#Next2').click(function ()
             {
-                $(".collapse").collapse('hide')
+                $(".collapse").collapse('hide');
+                AOS.init();
             });
 
             $('#demo1').click(function ()
             {
                 $(".collapse").collapse('hide')
+                AOS.init();
             });
 
             $('#demo2').click(function ()
             {
                 $(".collapse").collapse('hide')
+                AOS.init();
             });
 
             $('#demo3').click(function ()
@@ -536,6 +590,7 @@
             {
                 $(".collapse").collapse('hide')
             });
+
 
             $('#demo7').click(function ()
             {
